@@ -1,7 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from .. import crud, models, schemas, dependencies, scraper
+
+from .. import crud, schemas, dependencies, scraper
+# from .. import crud, models, schemas, dependencies, scraper
 
 router = APIRouter(
     prefix="/news",
